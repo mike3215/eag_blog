@@ -1,10 +1,10 @@
 EagBlog::Application.routes.draw do
-  devise_for :users
   mount Ckeditor::Engine => '/ckeditor'
   resources :articles
-  
 
-  root to: 'articles#index'
+  root 'articles#index'
+
+  devise_for :users, path_names: { sign_up: 'register', sign_in: 'signin', sign_out: 'signout' }
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
