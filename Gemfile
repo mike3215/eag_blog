@@ -10,6 +10,8 @@ gem 'jbuilder', '~> 1.2'
 gem 'ckeditor'
 gem 'paperclip'
 gem 'haml'
+gem 'cancan'
+gem 'devise'
 
 group :development, :test do
   gem 'pg'

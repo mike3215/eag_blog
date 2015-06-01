@@ -1,9 +1,10 @@
 EagBlog::Application.routes.draw do
+  devise_for :users
   mount Ckeditor::Engine => '/ckeditor'
   resources :articles
   
 
-  root 'articles#index'
+  root to: 'articles#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
