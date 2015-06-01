@@ -7,9 +7,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'react-rails'
 gem 'ckeditor'
 gem 'paperclip'
+gem 'haml'
 
 group :development, :test do
   gem 'pg'

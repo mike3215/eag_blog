@@ -1,0 +1,7 @@
+.articles-container
+  %h1 All Articles
+  %ul#articles
+    - @articles.each do |article|
+      %li= link_to article.title, article
+
+  = link_to 'Create a new Article', [:new, :article], class: 'new-article'
